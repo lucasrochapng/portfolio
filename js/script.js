@@ -109,3 +109,7 @@ while (trackWidth < screenWidth * 2) {
     track.innerHTML += track.innerHTML;
     trackWidth = track.scrollWidth;
 }
+
+if (window.innerWidth > 768) {
+    // parallax aqui
+}
