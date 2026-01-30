@@ -97,3 +97,15 @@ const observer = new IntersectionObserver(
 );
 
 reveals.forEach(el => observer.observe(el));
+
+// CARROSSEL INFINITO DE TECNOLOGIAS (REAL)
+const track = document.getElementById("techTrack");
+
+let trackWidth = track.scrollWidth;
+const screenWidth = window.innerWidth;
+
+// Duplica até garantir continuidade
+while (trackWidth < screenWidth * 2) {
+    track.innerHTML += track.innerHTML;
+    trackWidth = track.scrollWidth;
+}

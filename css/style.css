@@ -227,6 +227,78 @@ body {
     transform: translateY(0);
 }
 
+/* TECNOLOGIAS - CARROSSEL INFINITO REAL */
+.tech-carousel {
+    background: #0a0a0a;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.tech-track {
+    display: flex;
+    width: max-content;
+    animation: scrollTech 40s linear infinite;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 35px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.85;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.tech-item i {
+    font-size: 1.4rem;
+    color: var(--cor-secundaria);
+}
+
+.tech-item:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+@keyframes scrollTech {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.tech-carousel::before,
+.tech-carousel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+}
+
+.tech-carousel::before {
+    left: 0;
+    background: linear-gradient(to right, #0a0a0a, transparent);
+}
+
+.tech-carousel::after {
+    right: 0;
+    background: linear-gradient(to left, #0a0a0a, transparent);
+}
+
+.tech-carousel:hover .tech-track {
+    animation-play-state: paused;
+}
+
+
+
 /* MOBILE REFINEMENTS */
 @media (max-width: 768px) {
 
