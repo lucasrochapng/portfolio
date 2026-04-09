@@ -75,6 +75,7 @@ body {
 .hero {
     min-height: 100vh;
     background: #0f0f0f;
+    position: relative; /*imagem ao fundo*/
 }
 
 .hero h1 {
@@ -84,7 +85,10 @@ body {
 
 .hero img {
     width: 600px;
+    display: block; /*imagem ao fundo*/
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+    position: absolute; /*imagem ao fundo*/
+    bottom: 0 ;/*imagem ao fundo*/
 }
 
 .btn-primary {
@@ -150,9 +154,6 @@ body {
 
 .about {
     background: transparent;
-}
-
-.about {
     position: relative;
 }
 
@@ -160,7 +161,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6); /* ajuste aqui */
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -172,7 +173,7 @@ body {
 .about-img {
     max-width: 70%;
     border-radius: 10px;
-    filter: grayscale(20%);
+    filter: grayscale(20%);   
 }
 
 .about-cards {
