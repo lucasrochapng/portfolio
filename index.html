@@ -2,19 +2,20 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>LR | Desenvolvedor Web</title>
+    <title>Lucas Rocha | Desenvolvedor Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="img/LR.png" type="image/x-icon">
-    <meta name="description" content="Lucas Rocha — Desenvolvedor Web e Mobile. Criação de sites modernos, responsivos e focados em performance e experiência do usuário.">
+    <meta name="description" content="Desenvolvedor web freelancer especializado em criação de sites modernos, rápidos e responsivos. Transformo sua ideia em um projeto profissional.">
     <meta name="keywords" content="desenvolvedor web, portfólio, sites responsivos, frontend, freelancer">
     <meta name="author" content="Lucas Rocha">
     <meta property="og:title" content="Lucas Rocha | Desenvolvedor Web">
     <meta property="og:description" content="Portfólio profissional com projetos web, mobile e freelas.">
     <meta property="og:image" content="https://lucasrochapng.github.io/portfolio/img/LR.png">
     <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="https:www.devlucasrocha.com.br"> -->
 
 
 
@@ -37,8 +38,7 @@
                     <li class="nav-item"><a class="nav-link" href="#sobre">SOBRE</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projetos">PROJETOS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#feedback">FEEDBACK</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">PORTFÓLIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CONTATO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
                 </ul>
             </div>
         </div>
@@ -56,9 +56,13 @@
                         Eu sou <span id="typing"></span>
                     </h1>
                     <p class="mt-3">
-                        Sou desenvolvedor web com mais de 5 anos de experiência.<br>
-                        Minha especialidade é a criação e o design de websites, design gráfico e muito mais...
+                        Desenvolvedor focado em criar interfaces modernas, rápidas e responsivas.<br>
+                        Transformo ideias em experiências digitais que geram resultado.
                     </p>
+                    <div class="mt-4">
+                        <a href="#projetos" class="btn btn-primary me-2">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-outline-light">Entrar em Contato</a>
+                    </div>
 
                     <div class="social-icons mt-4">
                         <a href="https://github.com/lucasrochapng" aria-label="GitHub de Lucas Rocha"><i class="fab fa-github"></i></a>
@@ -75,6 +79,11 @@
 
             </div>
         </div>
+
+        <div class="scroll-down" onclick="document.querySelector('#sobre').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-angle-down"></i>
+        </div>
+
     </section>
 
     <!-- SOBRE MIM -->
@@ -89,16 +98,43 @@
                 <div class="col-md-6 text-white">
                     <h3>Olá, eu sou Lucas Rocha</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                        tellus est, finibus ut congue sed, faucibus ut dui.
+                        Sou desenvolvedor focado na criação de interfaces modernas, responsivas e bem estruturadas.
+                        Tenho experiência em transformar ideias em projetos reais, sempre priorizando performance,
+                        design e experiência do usuário.
                     </p>
 
-                    <ul class="info-list">
-                        <li><strong>Nome:</strong> Lucas Rocha</li>
-                        <li><strong>Idade:</strong> 29</li>
-                        <li><strong>Telefone:</strong> +41 9 9106-6145</li>
-                        <li><strong>Email:</strong> lucasrochadss@gmail.com</li>
-                    </ul>
+                    <p>
+                        Trabalho principalmente com tecnologias como HTML, CSS, JavaScript e frameworks modernos,
+                        desenvolvendo sites que não só são bonitos, mas também funcionais e otimizados.
+                    </p>
+
+                    <p>
+                        Meu objetivo é entregar soluções que realmente gerem resultado, seja para negócios,
+                        projetos pessoais ou presença digital profissional.
+                    </p>
+
+                    <div class="about-cards mt-4">
+
+                        <div class="about-card">
+                            <i class="fas fa-code"></i>
+                            <h5>Desenvolvimento</h5>
+                            <p>Criação de sites modernos e responsivos</p>
+                        </div>
+
+                        <div class="about-card">
+                            <i class="fas fa-paint-brush"></i>
+                            <h5>Design</h5>
+                            <p>Interfaces focadas em experiência do usuário</p>
+                        </div>
+
+                        <div class="about-card">
+                            <i class="fas fa-rocket"></i>
+                            <h5>Performance</h5>
+                            <p>Sites rápidos e otimizados</p>
+                        </div>
+
+                    </div>
+                    
                 </div>
 
             </div>
@@ -122,10 +158,13 @@
                 <i class="fab fa-bootstrap"></i><span>Bootstrap</span>
             </div>
             <div class="tech-item">
-                <i class="fab fa-react"></i><span>React</span>
+                <i class="fab fa-laravel"></i><span>Laravel</span>
             </div>
             <div class="tech-item">
-                <i class="fab fa-node-js"></i><span>Node.js</span>
+                <i class="fab fa-php"></i><span>PHP</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-database"></i><span>MySQL</span>
             </div>
             <div class="tech-item">
                 <i class="fab fa-git-alt"></i><span>Git</span>
@@ -149,95 +188,68 @@
                 </p>
             </div>
 
-            <!-- Filtros -->
-            <div class="projetos-filtros mb-4 text-center">
-                <button class="btn filtro ativo" data-filter="all">Todos</button>
-                <button class="btn filtro" data-filter="web">Web</button>
-                <button class="btn filtro" data-filter="mobile">Mobile</button>
-                <button class="btn filtro" data-filter="outros">Outros</button>
-            </div>
+            <div class="row g-4">
 
-            <!-- Grid -->
-            <div class="row g-4 projetos-grid">
+                <!-- Projeto 1 -->
+                <div class="col-md-6 projeto-item web reveal">
+                    <div class="projeto-card">
 
-                <div class="col-md-4 projeto-item web reveal">
-                    <a href="#" target="_blank">
                         <div class="projeto-img">
-                            <img src="img/projeto-1.jpg" alt="Projeto Web" loading="lazy">
+                            <img src="img/logo-newart.PNG" alt="Portfólio Artista">
+
+                            <div class="projeto-overlay">
+                                <a href="https://www.newartvisuals.com" class="btn-demo" target="_blank">Ver Projeto</a>
+                                <a href="https://github.com/lucasrochapng/newart" class="btn-code" target="_blank">Código</a>
+                            </div>
                         </div>
-                    </a>
-                </div>
 
-                <div class="col-md-4 projeto-item mobile reveal">
-                    <a href="#" target="_blank">
-                        <div class="projeto-img">
-                            <img src="img/projeto-2.jpg" alt="Projeto Mobile" loading="lazy">
+                        <div class="projeto-content">
+                            <h4>Portfólio para Artista Digital</h4>
+
+                            <p>
+                                Desenvolvimento de um portfólio moderno e responsivo para apresentação de trabalhos artísticos.
+                                Foco em design visual, navegação simples e identidade personalizada.
+                            </p>
+
+                            <div class="projeto-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
                         </div>
-                    </a>
-                </div>
 
-                <div class="col-md-4 projeto-item outros reveal">
-                    <a href="#" target="_blank">
-                        <div class="projeto-img">
-                            <img src="img/projeto-3.jpg" alt="Projeto Outros" loading="lazy">
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 projeto-item web reveal">
-                    <a href="#" target="_blank">
-                        <div class="projeto-img">
-                            <img src="img/projeto-4.jpg" alt="Projeto Web" loading="lazy">
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 projeto-item mobile reveal">
-                    <a href="#" target="_blank">
-                        <div class="projeto-img">
-                            <img src="img/projeto-5.jpg" alt="Projeto Mobile" loading="lazy">
-                        </div>                        
-                    </a>
-                </div>
-
-                <div class="col-md-4 projeto-item outros reveal">
-                    <a href="#" target="_blank">
-                        <div class="projeto-img">
-                            <img src="img/projeto-6.jpg" alt="Projeto Outros" loading="lazy">
-                        </div>                        
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- Métricas -->
-            <div class="row text-center mt-5 g-4">
-
-                <div class="col-md-3">
-                    <div class="metric-card reveal">
-                        <h3>90+</h3>
-                        <p>Projetos Concluídos</p>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="metric-card reveal">
-                        <h3>5+</h3>
-                        <p>Anos de Experiência</p>
-                    </div>
-                </div>
+                <!-- Projeto 2 -->
+                <div class="col-md-6 projeto-item web reveal">
+                    <div class="projeto-card">
 
-                <div class="col-md-3">
-                    <div class="metric-card reveal">
-                        <h3>40+</h3>
-                        <p>Clientes Satisfeitos</p>
-                    </div>
-                </div>
+                        <div class="projeto-img">
+                            <img src="img/logo-livra.png" alt="Sistema web de troca de livros desenvolvido em Laravel">
 
-                <div class="col-md-3">
-                    <div class="metric-card reveal">
-                        <h3>120k+</h3>
-                        <p>Linhas de Código</p>
+                            <div class="projeto-overlay">
+                                <a href="#" class="btn-demo" target="_blank">Ver Projeto</a>
+                                <a href="https://github.com/lucasrochapng/livra" class="btn-code" target="_blank">Código</a>
+                            </div>
+                        </div>
+
+                        <div class="projeto-content">
+                            <h4>Sistema de Troca de Livros</h4>
+
+                            <p>
+                                Plataforma web desenvolvida com Laravel, permitindo cadastro, busca e troca de livros entre usuários.
+                            </p>
+
+                            <div class="projeto-tech">
+                                <span>Laravel</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
 
@@ -264,9 +276,10 @@
                 <div class="col-md-4">
                     <div class="comentario-card reveal">
                         <div class="comentario-top">
-                            <img src="img/user1.jpg" alt="Cliente" loading="lazy">
+                            <img src="img/foto-newton.png" alt="Cliente" loading="lazy">
                             <div>
-                                <h5>GOJO S.</h5>
+                                <h5>Newton Henrique</h5>
+                                <!-- <small>NewArt Visuals</small> -->
                                 <div class="stars">
                                     ★★★★★
                                 </div>
@@ -286,9 +299,10 @@
                 <div class="col-md-4">
                     <div class="comentario-card reveal">
                         <div class="comentario-top">
-                            <img src="img/user2.jpg" alt="Cliente" loading="lazy">
+                            <img src="img/foto-luiz.png" alt="Cliente" loading="lazy">
                             <div>
-                                <h5>RYOMEN S.</h5>
+                                <h5>Luiz Caldeira</h5>
+                                <!-- <small>NewArt Visuals</small> -->
                                 <div class="stars">
                                     ★★★★★
                                 </div>
@@ -298,8 +312,7 @@
                         <hr>
 
                         <p>
-                            Comunicação clara, design moderno e código limpo.
-                            Recomendo sem pensar duas vezes!
+                            Fiquei impressionado com o trabalho do Lucas. Ele conseguiu transformar uma ideia ainda meio vaga em um site moderno, profissional e muito bem executado.
                         </p>
                     </div>
                 </div>
@@ -308,9 +321,10 @@
                 <div class="col-md-4">
                     <div class="comentario-card reveal">
                         <div class="comentario-top">
-                            <img src="img/user3.jpg" alt="Cliente" loading="lazy">
+                            <img src="img/foto-polly.png" alt="Cliente" loading="lazy">
                             <div>
-                                <h5>NANAMI K.</h5>
+                                <h5>Pollyana Machado</h5>
+                                <!-- <small>NewArt Visuals</small> -->
                                 <div class="stars">
                                     ★★★★★
                                 </div>
@@ -320,79 +334,44 @@
                         <hr>
 
                         <p>
-                            Ótima experiência do início ao fim. O site ficou rápido,
-                            bonito e totalmente responsivo.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card4 -->
-                <div class="col-md-4">
-                    <div class="comentario-card reveal">
-                        <div class="comentario-top">
-                            <img src="img/user3.jpg" alt="Cliente" loading="lazy">
-                            <div>
-                                <h5>NANAMI K.</h5>
-                                <div class="stars">
-                                    ★★★★★
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <p>
-                            Ótima experiência do início ao fim. O site ficou rápido,
-                            bonito e totalmente responsivo.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col-md-4">
-                    <div class="comentario-card reveal">
-                        <div class="comentario-top">
-                            <img src="img/user3.jpg" alt="Cliente" loading="lazy">
-                            <div>
-                                <h5>NANAMI K.</h5>
-                                <div class="stars">
-                                    ★★★★★
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <p>
-                            Ótima experiência do início ao fim. O site ficou rápido,
-                            bonito e totalmente responsivo.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col-md-4">
-                    <div class="comentario-card reveal">
-                        <div class="comentario-top">
-                            <img src="img/user3.jpg" alt="Cliente" loading="lazy">
-                            <div>
-                                <h5>NANAMI K.</h5>
-                                <div class="stars">
-                                    ★★★★★
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <p>
-                            Ótima experiência do início ao fim. O site ficou rápido,
-                            bonito e totalmente responsivo.
+                            Trabalhar com o Lucas foi uma experiência excelente do início ao fim. Ele demonstrou um nível de profissionalismo e atenção aos detalhes que realmente fazem a diferença.
                         </p>
                     </div>
                 </div>
 
             </div>
+
+
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato py-5">
+        <div class="container text-center">
+
+            <!-- Título -->
+            <h2 class="contato-title">Pronto para levar sua ideia para o próximo nível?</h2>
+            <p class="contato-desc">
+                Me chama e vamos transformar sua ideia em um projeto real, moderno e funcional.
+            </p>
+
+            <!-- Botões -->
+            <div class="contato-links mt-4">
+
+                <a href="https://wa.me/5541991066145" target="_blank" class="contato-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+
+                <a href="mailto:lucasrochadss@gmail.com" class="contato-btn email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+
+                <a href="https://github.com/lucasrochapng" target="_blank" class="contato-btn github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+
+            </div>
+
         </div>
     </section>
 
